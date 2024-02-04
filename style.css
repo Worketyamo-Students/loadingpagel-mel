@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --font-size-default: 10px;
+    --font-roboto: 'Roboto', sans-serif;
+    --primary-color: #2563EB;
+    --color-links: #0F172A;
+    --color-text: #475569;
+    --color-icon: #94A3B8;
+    --neutral-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size-default);
+}
+
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    font-family: var(--font-roboto);
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    background: var(--neutral-color);
+    padding: 0 2.5rem;
+}
+hr{
+  background-color: gray;
+    width: 100%;
+    height: 0.1rem;
+ margin-top: 1rem;
+}
+.nav_bar .logo {
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.nav_bar .nav_links {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 75%;
+}
+
+.nav_bar .nav_links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    width: 50rem;
+}
+
+.nav_bar .nav_links ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-links);
+    font-family: var(--font-roboto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_bar .nav_links ul a ion-icon {
+    margin-left: .6rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 19rem;
+    height: 100%;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn .login{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 5rem;
+    background: transparent;
+}
+
+.btn .sign {
+    font-size: 1.5rem;
+    padding: .9rem 1.5rem;
+    border-radius: .5rem;
+    width: 15rem;
+    color: var(--neutral-color);
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease;
+ 
+}
+
+.btn .sign:hover {
+    background: var(--neutral-color);
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+.btn .sign ion-icon {
+    margin-left: .5rem;
+}
+
+.nav_bar .btn-menu {
+    display: none;
+}
+
+.nav_bar .btn-menu button {
+    background: transparent;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_bar .btn-menu .bx {
+    color: var(--primary-color);
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+}
+.sec1{
+    display: flex;
+    height: 50rem;
+    margin: 1rem;
+    padding: 2rem 1rem;
+}
+ .sec1 .team_text{
+    flex: 1 ;
+    padding: 3rem;
+}
+.sec1 .team_text h1{
+    font-size: 7rem;
+    padding: 2rem;
+}
+.sec1 .team_text p{
+    font-size: 2rem;
+}
+input{
+    height: 4rem;
+    width: 50%;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 0.1rem solid grey;
+}
+button a{
+    text-decoration: none;
+    color: var(--neutral-color);
+}
+button{
+    background-color: var(--primary-color);
+    height: 4rem;
+   margin: 1rem;
+       border-radius: 1rem;
+   width: 20%;
+}
+.sec1 .team_text .press{
+    height: 6rem;
+    width: 95%;
+    margin: 2rem;
+    background-image: url(./images/made.png);
+    background-size: cover;
+    border-radius: 1rem;
+}
+.sec1 .team{
+    flex: 1 ;
+    background-color: rgb(167, 161, 161);
+    background-image: url(./images/business.png);
+    background-size: cover;
+    margin: 2rem;
+ } 
+.sec2{
+    display: flex;
+    height: 52rem;
+    width: 100%;
+}
+.sec2 .img{
+    flex: 1;
+}
+.sec2 .img .image1{
+    padding: 0 2rem;
+    margin: 0 2rem;
+}
+.sec2 .img .image2{
+  padding: 5rem 0rem;
+  margin: 1rem 0rem;
+}
+.sec2 .img .image3{
+    padding: 3rem 2rem;
+}
+.sec2 .message{
+    flex: 1;
+}
+.sec2 .message h1{
+    font-size: 7rem;
+    padding: 4.5rem;
+}
+.sec2 .message p{
+    font-size: 2rem;
+    color: var(--color-text);
+    padding: 0 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.sec2 .message a{
+    padding: 4.5rem;
+    margin: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.sec3{
+    display: flex;
+    height: 65rem;
+    width: 100%;
+}
+.sec3 .write{
+    flex: 1;
+}
+.sec3 .write h1{
+    font-size: 7rem;
+    padding: 4.5rem;
+    text-align: center;
+}
+.sec3 .write p{
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+.sec3 .write a{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 3rem;
+    text-align: center;
+}
+.sec3 .circle{
+    flex: 1;
+    background-image: url(./images/cycle.png);
+    background-size: cover;
+    height: 60rem;
+    width: 80%;
+}
+.sec4{
+    height: 30rem;
+    width: 100%;
+    background-image: url(./images/mongolfier.png);
+    background-size: cover;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .nav_bar .nav_links {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 5rem;
+        height: 100vh;
+        backdrop-filter: blur(4px);
+        background: #0f10357c;
+        margin-right: 100%;
+        padding-top: 2rem;
+        transition: all 1s ease;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .nav_bar .nav_links ul { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        height: 40%;
+        margin-bottom: 4rem;
+    }
+
+    .nav_bar .nav_links .btn {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 20%;
+    }
+
+    .nav_bar .btn-menu {
+        display: block;
+    }
+
+    .nav_links.mobile-menu {
+        margin-right: 50%;
+    }
+}
+
+
+
+
+
+
+
